@@ -41,8 +41,8 @@ class PaymentController implements Controller {
                 }
             }),
             mode: 'payment',
-            success_url: `http://localhost:3000`,
-            cancel_url: `http://localhost:3000/cart`,
+            success_url: `https://loquacious-cranachan-0f2f74.netlify.app`,
+            cancel_url: `https://loquacious-cranachan-0f2f74.netlify.app/cart`,
         })
 
         res.status(StatusCodes.OK).send(session.url)
